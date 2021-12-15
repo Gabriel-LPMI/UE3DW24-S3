@@ -4,9 +4,11 @@ import { AppService } from './app.service';
 import { UsersModule } from './users/users.module';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { ConfigModule } from '@nestjs/config';
+import { Users } from './users/entities/user.entity'
 
 @Module({
     imports: [
+        UsersModule,
         ConfigModule.forRoot(),
         TypeOrmModule.forRoot({
             type: 'mysql',
@@ -15,10 +17,10 @@ import { ConfigModule } from '@nestjs/config';
             username: process.env.DB_USER,
             password: process.env.DB_PASSWORD,
             database: process.env.DB_DATABASE,
-            entities: [],
+            entities: [Users],
             synchronize: true,
         }),
-        UsersModule],
+    ],
     controllers: [AppController],
     providers: [AppService],
 })
