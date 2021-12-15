@@ -18,6 +18,7 @@ import { Users } from './users/entities/user.entity'
             password: process.env.DB_PASSWORD,
             database: process.env.DB_DATABASE,
             entities: [Users],
+            logging: true,
             synchronize: true,
         }),
     ],

@@ -1,6 +1,7 @@
 import {Entity, PrimaryGeneratedColumn, Column, EntityRepository, Repository } from "typeorm";
 
-@Entity()
+//Change the table name according to your needs
+@Entity('Users')
 export class Users {
 
     @PrimaryGeneratedColumn()
@@ -16,7 +17,7 @@ export class Users {
     createdAt: Date;
 
     @Column({ type: "timestamp", default: () => "CURRENT_TIMESTAMP"})
-    upadatedAt: Date;
+    updatedAt: Date;
 }
 
 @EntityRepository(Users)
