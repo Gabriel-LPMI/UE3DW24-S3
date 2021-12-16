@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testExecutions version="1">
+    <file path="/home/vagrant/nestjs/backend/src/users/users.controller.spec.ts">
+        <testCase name="UsersController should be defined" duration="22"/>
+        <testCase name="UsersController UserController.findAll  should return an array of users" duration="5"/>
+        <testCase name="UsersController UserController.findOne  should return an user" duration="6"/>
+    </file>
+    <file path="/home/vagrant/nestjs/backend/src/users/users.service.spec.ts">
+        <testCase name="UsersService should be defined" duration="6"/>
+        <testCase name="UsersService UserService.findAll  should return an array of users" duration="6"/>
+    </file>
+    <file path="/home/vagrant/nestjs/backend/src/app.controller.spec.ts">
+        <testCase name="AppController root should return &quot;Hello World!&quot;" duration="6"/>
+    </file>
+</testExecutions>
