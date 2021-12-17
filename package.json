@@ -91,6 +91,7 @@
     "coveragePathIgnorePatterns": [
       "/coverage/",
       "/test/",
+      "/dist",
       "/node_modules/",
       "main.ts",
       ".eslintrc.js",
